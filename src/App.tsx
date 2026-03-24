@@ -7,6 +7,20 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <section className="py-24 px-6 bg-black text-center">
+    <h2 className="text-5xl font-display mb-10">
+      Watch Our Workout Video
+    </h2>
+
+    <div className="max-w-5xl mx-auto">
+      <iframe
+        src="https://www.youtube.com/embed/wnHW6o8WMas"
+        title="Workout Video"
+        className="w-full h-[500px] rounded-xl"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </section>
         <TransformationHook />
         <Programs />
         <Results />
