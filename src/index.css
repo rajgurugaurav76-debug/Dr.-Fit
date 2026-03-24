@@ -42,3 +42,10 @@ h1, h2, h3, h4, h5, h6, .font-display {
 section {
   scroll-margin-top: 120px;
 }
+::selection {
+  background: #FF3300;
+  color: white;
+}
+button, a {
+  transition: all 0.3s ease;
+}
