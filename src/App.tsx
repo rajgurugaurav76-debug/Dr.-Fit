@@ -7,7 +7,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <section className="py-24 px-6 bg-black text-center">
+        <section id="video" className="py-24 px-6 bg-black text-center">
     <h2 className="text-5xl font-display mb-10">
       Watch Our Workout Video
     </h2>
@@ -46,7 +46,12 @@ function Navbar() {
           <a href="#about" className="hover:text-white transition-colors">About</a>
           <a href="#testimonials" className="hover:text-white transition-colors">Reviews</a>
         </div>
-        <button className="bg-[#FF3300] hover:bg-[#CC2900] text-white px-6 py-3 font-display tracking-widest text-sm transition-colors uppercase skew-x-[-10deg]">
+        <a
+  href="#programs"
+  className="bg-[#FF3300] hover:bg-[#CC2900] text-white px-6 py-3 font-display tracking-widest text-sm transition-colors uppercase skew-x-[-10deg]"
+>
+  <span className="block skew-x-[10deg]">Start Now</span>
+</a>
           <span className="block skew-x-[10deg]">Start Now</span>
         </button>
       </div>
@@ -96,7 +101,14 @@ function Hero() {
                 Claim Your Spot <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </span>
             </button>
-            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-5 font-display tracking-widest text-lg transition-all uppercase skew-x-[-10deg] flex items-center justify-center gap-2">
+            <a
+  href="#video"
+  className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-8 py-5 font-display tracking-widest text-lg transition-all uppercase skew-x-[-10deg] flex items-center justify-center gap-2"
+>
+  <span className="block skew-x-[10deg] flex items-center gap-2">
+    Watch Video
+  </span>
+</a>
               <span className="block skew-x-[10deg] flex items-center gap-2">
                 <Play size={20} className="fill-white" /> Watch Video
               </span>
